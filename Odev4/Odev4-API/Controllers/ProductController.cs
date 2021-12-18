@@ -26,23 +26,39 @@ namespace Odev4_API.Controllers
         [HttpGet]
         public IActionResult GetAll([FromQuery] int? pageCount, int? orderType, int? maxProductOnAPage)
         {
+            //Hangi sayfadasınız, boş ise ilk sayfayı tanımlamak için 1 verdik.
             pageCount = pageCount ?? 1;
+
+            //Sıralamanın tipini belirledik. Default olarak fiyata göre artan belirledik.
             orderType = orderType ?? (Int32)SortingType.PriceAsc;
+
+            //Bir sayfada maksimum kaç ürün olacağını belirledik. Default olarak 10 verdik.
             maxProductOnAPage = maxProductOnAPage ?? 10;
 
+            //Toplam ürün sayısını çektik.
             int totalProduct = _context.Products.Count();
+
+            //Toplam sayfa sayısını hesapladık.
             int totalPage = (Int32)(totalProduct / maxProductOnAPage);
 
-            var productLists = _context.Products.Skip((Int32)((pageCount - 1) * maxProductOnAPage)).Take((Int32)maxProductOnAPage).ToList();
+            //Ürünlerimizi listeledik.
+            var productLists = new List<Product>();
 
             switch ((SortingType)orderType)
             {
                 case SortingType.PriceAsc:
-                    productLists.OrderBy(x => x.Price);
+                    productLists= _context.Products.OrderBy(x => x.Price)
+                                                   .Skip((Int32)((pageCount - 1) * maxProductOnAPage))
+                                                   .Take((Int32)maxProductOnAPage)
+                                                   .ToList();
                     break;
                 case SortingType.PriceDesc:
-                    productLists.OrderByDescending(x => x.Price);
+                    productLists = _context.Products.OrderByDescending(x => x.Price)
+                                                    .Skip((Int32)((pageCount - 1) * maxProductOnAPage))
+                                                    .Take((Int32)maxProductOnAPage)
+                                                    .ToList();
                     break;
+
                 default:
                     break;
             }
