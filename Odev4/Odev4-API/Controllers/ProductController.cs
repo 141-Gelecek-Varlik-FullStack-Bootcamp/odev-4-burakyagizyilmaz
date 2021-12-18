@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
+using Odev4_API.Filters;
 using Odev4_API.GlobalEnums;
 using Odev4_Data.DTOs;
 using Odev4_Data.Models;
@@ -11,16 +13,18 @@ namespace Odev4_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class ProductController : BaseController
     {
 
         private readonly AppDBContext _context;
         private readonly IMapper _mapper;
+        private readonly IMemoryCache _memoryCache;
 
-        public ProductController(AppDBContext context, IMapper mapper)
+        public ProductController(AppDBContext context, IMapper mapper, IMemoryCache memoryCache) : base(memoryCache)
         {
             _context = context;
             _mapper = mapper;
+            _memoryCache = memoryCache;
         }
 
         [HttpGet]
@@ -44,7 +48,7 @@ namespace Odev4_API.Controllers
             //Ürünlerimizi listeledik.
             var productLists = new List<Product>();
 
-            //Filtre kriterlerini belirledik.
+            //Filtre kriterlerini belirledik. Default olarak ürünlerin max ve min fiyatlarını belirledik.
             priceMin = priceMin ?? _context.Products.OrderBy(x => x.Price).FirstOrDefault().Price;
             priceMax = priceMax ?? _context.Products.OrderByDescending(x => x.Price).FirstOrDefault().Price;
 
@@ -90,6 +94,7 @@ namespace Odev4_API.Controllers
         }
 
         [HttpDelete("{Id}")]
+        [ServiceFilter(typeof(LoginFilter))]
         public IActionResult Delete([FromRoute] int Id)
         {
             if (_context.Products.Any(x => x.Id == Id))

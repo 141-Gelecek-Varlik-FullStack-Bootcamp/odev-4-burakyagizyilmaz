@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Odev4_API.Filters;
 using Odev4_Data.Models;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,8 @@ namespace Odev4_API
             services.AddAutoMapper(typeof(Startup));
             services.AddDbContext<AppDBContext>();
             services.AddControllers();
+            services.AddMemoryCache();
+            services.AddScoped<LoginFilter>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Odev4_API", Version = "v1" });
