@@ -1,0 +1,15 @@
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\bin\Debug\net5.0\Odev4-Data.deps.json
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\bin\Debug\net5.0\Odev4-Data.runtimeconfig.json
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\bin\Debug\net5.0\Odev4-Data.runtimeconfig.dev.json
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\bin\Debug\net5.0\Odev4-Data.dll
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\bin\Debug\net5.0\ref\Odev4-Data.dll
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\bin\Debug\net5.0\Odev4-Data.pdb
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\obj\Debug\net5.0\Odev4-Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\obj\Debug\net5.0\Odev4-Data.AssemblyInfoInputs.cache
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\obj\Debug\net5.0\Odev4-Data.AssemblyInfo.cs
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\obj\Debug\net5.0\Odev4-Data.csproj.CoreCompileInputs.cache
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\obj\Debug\net5.0\Odev4-Data.dll
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\obj\Debug\net5.0\ref\Odev4-Data.dll
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\obj\Debug\net5.0\Odev4-Data.pdb
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\obj\Debug\net5.0\Odev4-Data.genruntimeconfig.cache
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Data\obj\Debug\net5.0\Odev4-Data.csproj.AssemblyReference.cache

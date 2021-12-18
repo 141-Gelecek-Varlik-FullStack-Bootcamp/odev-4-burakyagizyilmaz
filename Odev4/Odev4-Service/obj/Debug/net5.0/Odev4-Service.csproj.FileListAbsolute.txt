@@ -1,0 +1,15 @@
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\bin\Debug\net5.0\Odev4-Service.deps.json
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\bin\Debug\net5.0\Odev4-Service.dll
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\bin\Debug\net5.0\ref\Odev4-Service.dll
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\bin\Debug\net5.0\Odev4-Service.pdb
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\bin\Debug\net5.0\Odev4-Data.dll
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\bin\Debug\net5.0\Odev4-Data.pdb
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\obj\Debug\net5.0\Odev4-Service.csproj.AssemblyReference.cache
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\obj\Debug\net5.0\Odev4-Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\obj\Debug\net5.0\Odev4-Service.AssemblyInfoInputs.cache
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\obj\Debug\net5.0\Odev4-Service.AssemblyInfo.cs
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\obj\Debug\net5.0\Odev4-Service.csproj.CoreCompileInputs.cache
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\obj\Debug\net5.0\Odev4-Service.csproj.CopyComplete
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\obj\Debug\net5.0\Odev4-Service.dll
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\obj\Debug\net5.0\ref\Odev4-Service.dll
+C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Odev4-Service\obj\Debug\net5.0\Odev4-Service.pdb
