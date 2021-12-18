@@ -24,7 +24,7 @@ namespace Odev4_API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll([FromQuery] int? pageCount, int? orderType, int? maxProductOnAPage)
+        public IActionResult GetAll([FromQuery] int? pageCount, int? orderType, int? maxProductOnAPage, double? priceMin, double? priceMax)
         {
             //Hangi sayfadasınız, boş ise ilk sayfayı tanımlamak için 1 verdik.
             pageCount = pageCount ?? 1;
@@ -44,16 +44,25 @@ namespace Odev4_API.Controllers
             //Ürünlerimizi listeledik.
             var productLists = new List<Product>();
 
+            //Filtre kriterlerini belirledik.
+            priceMin = priceMin ?? _context.Products.OrderBy(x => x.Price).FirstOrDefault().Price;
+            priceMax = priceMax ?? _context.Products.OrderByDescending(x => x.Price).FirstOrDefault().Price;
+
             switch ((SortingType)orderType)
             {
+                //Fiyata göre artan sıralamada ürünleri listeledik.
                 case SortingType.PriceAsc:
-                    productLists= _context.Products.OrderBy(x => x.Price)
+                    productLists= _context.Products.Where(x=>x.Price>=priceMin && x.Price<=priceMax)
+                                                   .OrderBy(x => x.Price)
                                                    .Skip((Int32)((pageCount - 1) * maxProductOnAPage))
                                                    .Take((Int32)maxProductOnAPage)
                                                    .ToList();
                     break;
+
+                //Fiyata göre azalan sıralamada ürünleri listeledik.
                 case SortingType.PriceDesc:
-                    productLists = _context.Products.OrderByDescending(x => x.Price)
+                    productLists = _context.Products.Where(x => x.Price >= priceMin && x.Price <= priceMax)
+                                                    .OrderByDescending(x => x.Price)
                                                     .Skip((Int32)((pageCount - 1) * maxProductOnAPage))
                                                     .Take((Int32)maxProductOnAPage)
                                                     .ToList();
