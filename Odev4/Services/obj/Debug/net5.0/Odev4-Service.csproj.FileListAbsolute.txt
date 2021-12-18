@@ -1,5 +1,0 @@
-C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Services\obj\Debug\net5.0\Odev4-Service.csproj.AssemblyReference.cache
-C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Services\obj\Debug\net5.0\Odev4-Service.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Services\obj\Debug\net5.0\Odev4-Service.AssemblyInfoInputs.cache
-C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Services\obj\Debug\net5.0\Odev4-Service.AssemblyInfo.cs
-C:\Users\Burak\Documents\Github\GelecekVarlikYonetimi-Odev-W4\odev-4-burakyagizyilmaz\Odev4\Services\obj\Debug\net5.0\Odev4-Service.csproj.CoreCompileInputs.cache
