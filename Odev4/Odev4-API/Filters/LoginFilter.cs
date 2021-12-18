@@ -20,6 +20,8 @@ namespace Odev4_API.Filters
         {
             if (!_memoryCache.TryGetValue(CacheKey.LoginKey, out UserLoginDTO userLogin))
             {
+                //Memorycache de mevcut değil ise actiona girmesinbe izin vermeden UnauthorizedObjectResult a yönlendiriyoruz.
+                //Burada cache den gelen bilginin databasede karşılığı kontrol edilmeli.
                 context.Result = new UnauthorizedObjectResult("Yetkisiz Erişim");
             }
         }

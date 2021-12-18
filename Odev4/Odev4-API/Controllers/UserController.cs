@@ -25,10 +25,12 @@ namespace Odev4_API.Controllers
         [HttpPost]
         public IActionResult Login([FromBody]UserLoginDTO userLogin)
         {
-            if (string.Equals(userLogin.Password,userLogin.PasswordConfirmation))
+
+            if (string.Equals(userLogin.Password,userLogin.PasswordConfirmation)) //Şifrelerin aynı olup olmadığı kontrol edildi.
             {
-                if (_dbContext.Users.Any(x => x.Email == userLogin.Email && x.Password == userLogin.Password))
+                if (_dbContext.Users.Any(x => x.Email == userLogin.Email && x.Password == userLogin.Password)) // Kullanıcı maili ve şifresi ile uyuşan user var mı diye bakıldı.
                 {
+                    //Kullanıcı bilgisi Memorycache e atıldı.
                     _memoryCache.Set(CacheKey.LoginKey, userLogin, new MemoryCacheEntryOptions
                     {
                         AbsoluteExpiration = DateTime.Now.AddDays(1),
